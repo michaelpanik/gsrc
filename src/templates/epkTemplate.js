@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import { parseText } from "../helpers"
-import { FaFacebook, FaInstagram } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaMusic, FaYoutube } from "react-icons/fa"
 
 const Template = ({ data }) => {
   const { markdownRemark } = data
@@ -11,6 +11,8 @@ const Template = ({ data }) => {
   const SocialIcons = {
     facebook: FaFacebook,
     instagram: FaInstagram,
+    youtube: FaYoutube,
+    tiktok: FaMusic,
   }
 
   const createEmbed = () => {
